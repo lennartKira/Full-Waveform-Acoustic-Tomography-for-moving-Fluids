@@ -5,18 +5,18 @@ To get started, download the repository and create the conda environment "FWI_en
 'conda env create -f FWI_env.yml'
 
 Alternatively create the environment 'FWI_env' yourself ('conda env create --name FWI_env python=3.12') and install the following packages:
--numpy
--matplotlib
--scipy
--torchaudio and torchvision (for GPU computing we recommend installing the torch version fitting your unit's cuda capabilities - see https://pytorch.org/get-started/locally/)
--ipykernel
--h5py
--(jupyter)
+- numpy
+- matplotlib
+- scipy
+- torchaudio and torchvision (for GPU computing we recommend installing the torch version fitting your unit's cuda capabilities - see https://pytorch.org/get-started/locally/)
+- ipykernel
+- h5py
+- (jupyter)
 
 Then activate the environment with
 'conda activate FWI_env'.
 
-When completed, use Jupyter Notebook (or an alternative) to run the Notebooks in the **Folder "Target Models"** with the environment active. By running this notebook, you will create the true model data.
+When completed, use Jupyter Notebook (or an alternative) to run the Notebooks in the **Folder "./Target Models"** with the environment active. By running this notebook, you will create the true model data.
 
 Afterwards navigate into the **Folder "./Code/Notebooks"** and run the Notebooks insde:
 
@@ -49,5 +49,8 @@ This notebook can be used to load the reconstructions of the FWI and SRI.
 By doing so, the evolution of the misfit and the choice of the widths of the filters can be reviewed.
 Furthermore, this routine is used to average the FWI results onto the straight-ray grid and compute the reconstruction errors - and store them for display.
 
+**'05_Create Summarizing Figures'**\
+Use this notebook to create figures of the reconstructions and error behavior, comparing straight-ray and full-waveform inversion. This routine uses the compressed data from the Notebook 04.
+
 ----
-*If you lack computation power and are interested in experimenting with the kernels and full-waveform reconstructions using the Notebooks 02 and 04, please contact us. We have prepared high resolution data to access with these Notebooks.
+*If you lack computation power and are interested in experimenting with the kernels and full-waveform reconstructions using the Notebooks 02 and 04, please contact us. We have prepared high resolution data to access with these Notebooks!
